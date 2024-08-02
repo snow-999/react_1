@@ -7,6 +7,7 @@ import About from './componants/About/About'
 import Port from './componants/Port/Port'
 import Contact from './componants/Contact/Contact'
 import LayOut from './componants/LayOut/LayOut'
+import NootFound from './componants/NootFound/NootFound'
 
 
 let router = createBrowserRouter([
@@ -15,7 +16,8 @@ let router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: 'about', element: <About /> },
       { path: 'port', element: <Port /> },
-      { path: 'Contact', element: <Contact /> }
+      { path: 'Contact', element: <Contact /> },
+      { path: '*', element: <NootFound /> }
     ]
   }
 
