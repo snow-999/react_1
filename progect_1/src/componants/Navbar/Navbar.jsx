@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function Navbar() {
 
-    const [Nav, setNav] = useState(false)
+    const [Nav, setNav] = useState(true)
 
     const click = () => setNav(!Nav)
     return <>
@@ -27,7 +27,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className={`${Nav ? `hidden` : `block`
-                    } mobile-menu md:hidden`}>
+                    } mobile-menu`}>
                     <ul className="mt-4 space-y-4">
                         <li><NavLink to="about" className="block px-4 py-2 text-white bg-gray-900 rounded">About</NavLink></li>
                         <li><NavLink to="port" className="block px-4 py-2 text-white bg-gray-900 rounded">Portofolio</NavLink></li>
